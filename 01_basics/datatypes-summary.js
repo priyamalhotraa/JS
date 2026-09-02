@@ -51,3 +51,27 @@ console.log(typeof bigNumber);
        Arrays  =>  object
        Function  =>  function
        Object  =>  object */
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myName = "PriyaMalhotra"
+
+let anotherName = myName
+anotherName = "AnmolMalhotra"
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user123"
+}
+
+let userTwo = userOne
+
+userTwo.email = "priya@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
