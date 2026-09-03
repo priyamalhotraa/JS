@@ -1,4 +1,4 @@
-// Primitive (call by value(copy of data))
+// Primitive (call by value(copy of data)) (stack)
 
 // 7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
 
@@ -17,18 +17,18 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-// console.log(id === anotherId);
+// console.log(id === anotherId);  // false
 
 const bigNumber = 123456789012345678n // bigInt
 
-// Reference (Non primitive)(call by reference)
+// Reference (Non primitive)(call by reference) (heap)
 
 // Array, Objects, Functions
 
 const heros = ["shaktiman", "naagraj", "doga"]
 let myObj = {
     name: "Priya",
-    age: 22,
+    age: 21,
 }
 
 const myFunction = function(){
