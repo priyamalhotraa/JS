@@ -9,7 +9,7 @@ let marks ="33abc"
 // console.log(typeof(score));// also can be written as a method
 // console.log(typeof marks);
 
-let valueInNumber = Number(marks)// in capital
+let valueInNumber = Number(marks)// in capital  // conerting to number datatype
 // console.log(typeof valueInNumber);
 // console.log(valueInNumber);
 
@@ -28,8 +28,8 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 
 let someNumber = 33
 let stringNumber = String(someNumber)
-// console.log(stringNumber);
-// console.log(typeof stringNumber);
+console.log(stringNumber);
+console.log(typeof stringNumber);  // gives string
 
 /******************** Operations ******************/
 
@@ -49,16 +49,16 @@ let str2 = " Priya"
 
 let str3 = str1 + str2
 // console.log(str3);
-
-// console.log("1" + 2);
-// console.log(1 + "2");
-// console.log("1" + 2 + 2);
-// console.log(1 + 2 + "2"); // bad practice //ecma script 7.1 (tc39.es)
+ 
+// console.log("1" + 2);  // 12
+// console.log(1 + "2");  // 12
+// console.log("1" + 2 + 2);  // 122
+// console.log(1 + 2 + "2");   // 32  // bad practice // ecma script 7.1 (tc39.es)
 
 // console.log((3 + 4) * 5 % 3); // use parenthesis for clean code and avoiding confusion
 
 // console.log(+true); // gives 1  // bad practice
-// console.log(+""); // gives 0  //bad practice
+// console.log(+""); // gives 0  // bad practice
 
 let num1, num2, num3
 num1 = num2 = num3 = 2 + 2  // confusion
@@ -66,10 +66,3 @@ num1 = num2 = num3 = 2 + 2  // confusion
 let gameCounter = 100
 gameCounter++;   // prefix n postfix operator from mdn
 console.log(gameCounter);
-
-
-
-
-
-
-
