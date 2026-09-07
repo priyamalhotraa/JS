@@ -46,12 +46,38 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));  // important  // [ 'id', 'name', 'isLoggedain' ]
-console.log(Object.values(tinderUser)); // [ '123abc', 'sammy', false ]
-console.log(Object.entries(tinderUser));  // [ [ 'id', '123abc' ], [ 'name', 'sammy' ], [ 'isLoggedain', false ] ]
+// console.log(Object.keys(tinderUser));  // important  // [ 'id', 'name', 'isLoggedain' ]
+// console.log(Object.values(tinderUser)); // [ '123abc', 'sammy', false ]
+// console.log(Object.entries(tinderUser));  // [ [ 'id', '123abc' ], [ 'name', 'sammy' ], [ 'isLoggedain', false ] ]
 
-console.log(tinderUser.hasOwnProperty('isLoggedin')); // checks if the user that property or not  // true
-console.log(tinderUser.hasOwnProperty('isLogged')); // false
+// console.log(tinderUser.hasOwnProperty('isLoggedin')); // checks if the user that property or not  // true
+// console.log(tinderUser.hasOwnProperty('isLogged')); // false
+
+
+const course = {
+    coursename: "Javascript",
+    price: "999",
+    courseInstructor: "youtube"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course  // de structuring  // also now can call courseinstructor as instructor
+
+// console.log(courseInstructor);
+console.log(instructor);
+
+// { // json
+//     "name": "priyaa",
+//     "coursename": "javascript",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
 
