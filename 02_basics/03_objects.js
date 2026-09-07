@@ -2,8 +2,6 @@
 // singleton - (not by literals) (by constructor)
 // Object.create
 
-// const { jsx } = require("react/jsx-runtime");
-
 // object literals
 
 const mySym = Symbol("key1")  // symbol declaration
