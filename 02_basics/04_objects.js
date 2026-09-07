@@ -52,6 +52,6 @@ console.log(Object.keys(tinderUser));  // important  // [ 'id', 'name', 'isLogge
 console.log(Object.values(tinderUser)); // [ '123abc', 'sammy', false ]
 console.log(Object.entries(tinderUser));  // [ [ 'id', '123abc' ], [ 'name', 'sammy' ], [ 'isLoggedain', false ] ]
 
-console.log(tinderUser.hasOwnProperty('isLoggedin')); // checks if the user that property or not
-console.log(tinderUser.hasOwnProperty('isLogged'));
+console.log(tinderUser.hasOwnProperty('isLoggedin')); // checks if the user that property or not  // true
+console.log(tinderUser.hasOwnProperty('isLogged')); // false
 
