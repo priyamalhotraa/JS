@@ -37,9 +37,35 @@ function loginUserMessage(username = "sam"){  // sam is default value here if no
 }
 
 // console.log(loginUserMessage("priya"));
-console.log(loginUserMessage()); // undefined
+// console.log(loginUserMessage()); // undefined
 
-function calculateCartPrice(...num1){  // rest operator basically pack in a bundle and give
+function calculateCartPrice(val1, val2, ...num1){  // rest operator basically pack in a bundle and give
     return num1
 }
-console.log(calculateCartPrice(200, 300, 500));
+// console.log(calculateCartPrice(200, 300, 500, 900));  // 500, 900
+
+const user = {
+    username: "priya",
+    price: 999
+}
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+}
+
+// handleObject(user)
+
+handleObject({   // we can directly pass objects
+    username: "sam",
+    price: 899
+})
+
+const myNewArray = [200, 300, 400, 500]
+
+function returnSecondValue(getArray){  // getArray is an argument here
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+
+console.log(returnSecondValue([200, 300, 500, 1000]));
