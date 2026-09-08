@@ -30,7 +30,7 @@ const result = addTwoNumbers(3, 5)
 
 function loginUserMessage(username = "sam"){  // sam is default value here if no argument is passed in function calling
     if(username === undefined){   // same as (!username) means username is undefined,  (undefined is false value, also empty string is false value)
-        console.log("Please enter a username");
+        // console.log("Please enter a username");
         return
     }
     return `${username} just logged in`
@@ -38,3 +38,8 @@ function loginUserMessage(username = "sam"){  // sam is default value here if no
 
 // console.log(loginUserMessage("priya"));
 console.log(loginUserMessage()); // undefined
+
+function calculateCartPrice(...num1){  // rest operator basically pack in a bundle and give
+    return num1
+}
+console.log(calculateCartPrice(200, 300, 500));
